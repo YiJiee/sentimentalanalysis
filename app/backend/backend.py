@@ -3,6 +3,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/time')
-def get_current_time():
-    return {'time': time.time()}
+@app.route('/identity/<keyword>/<location>')
+def identity(keyword, location):
+    return {
+        'keyword': keyword,
+        'location': location
+    }

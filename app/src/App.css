@@ -1,0 +1,24 @@
+.App {
+  text-align: left;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 4fr 6fr;
+  grid-template-columns: 1fr 6fr 3fr;
+
+}
+
+.App-header {
+  grid-column: 1/4;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-form {
+  grid-column: 2/3;
+  grid-row: 2;
+}
